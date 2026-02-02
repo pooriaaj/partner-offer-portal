@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohammadreza (Pooria) Alijani — Web Integrator</title>
+  <meta name="description" content="Web Integrator mini-portfolio: HTML/CSS, SQL, JSON/XML, Git, QA mindset." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header / Nav: shared layout -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Pooria Alijani</a>
+
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="case-study.html">Case Study</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-left">
+        <p class="kicker">Web Integrator • QA-minded • SQL Validation</p>
+
+        <h1>Web Integrator / QA-minded Delivery Specialist</h1>
+
+        <p class="subtitle">
+          Based in Montreal • Strong in HTML/CSS UI integration, SQL validation, structured workflows, and clean documentation.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="case-study.html">View Case Study</a>
+          <a class="btn" href="#demo">See Mini Demo</a>
+        </div>
+
+        <div class="chips" aria-label="Key skills">
+          <span class="chip">HTML5 / CSS3</span>
+          <span class="chip">SQL</span>
+          <span class="chip">JSON / XML</span>
+          <span class="chip">Git</span>
+          <span class="chip">Jira</span>
+          <span class="chip">Agile / Scrum</span>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h2 class="card-title">Quick Profile</h2>
+        <ul class="clean-list">
+          <li><strong>Name:</strong> Mohammadreza (Pooria) Alijani</li>
+          <li><strong>Location:</strong> Montreal, QC</li>
+          <li><strong>Email:</strong> <a href="mailto:pooriaalijani@gmail.com">pooriaalijani@gmail.com</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/pooriaaj" target="_blank" rel="noreferrer">github.com/pooriaaj</a></li>
+        </ul>
+
+        <p class="note">
+          Focus: integration accuracy, UI consistency, data/config validation, and fast iteration with clear tracking.
+        </p>
+      </aside>
+    </section>
+
+    <!-- What I bring -->
+    <section class="section">
+      <h2>What I bring</h2>
+
+      <div class="grid-3">
+        <article class="card">
+          <h3>Web Integration & UI Validation</h3>
+          <p>Build and validate UI against design rules: layout, content visibility, link behavior, and consistency.</p>
+          <ul class="bullets">
+            <li>HTML5 structure, reusable components</li>
+            <li>CSS3 styling + responsive checks</li>
+            <li>UI consistency / visual verification</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Data & Configuration</h3>
+          <p>Comfortable working with system rules tied to databases and configuration files.</p>
+          <ul class="bullets">
+            <li>SQL queries for validation & troubleshooting</li>
+            <li>JSON/XML interpretation & structure checks</li>
+            <li>Config awareness (properties / rules)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Quality & Workflow</h3>
+          <p>Structured QA mindset: reproduce, document, prioritize, verify fixes, and keep stakeholders aligned.</p>
+          <ul class="bullets">
+            <li>Functional + regression test coverage</li>
+            <li>Defect documentation (Jira-style clarity)</li>
+            <li>Agile collaboration & iteration</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Mini Demo -->
+    <section id="demo" class="section">
+      <h2>Mini Demo: Form Validation + JSON Preview</h2>
+
+      <p class="muted">
+        This demo shows “integration QA” thinking: validate inputs, generate clean JSON output, and keep behavior predictable.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Input Form</h3>
+
+          <form id="demoForm" class="form" novalidate>
+            <label class="label">
+              Full Name
+              <input id="name" name="name" type="text" placeholder="e.g., Pooria Alijani" autocomplete="name" />
+              <span class="hint">Letters and spaces only.</span>
+            </label>
+
+            <label class="label">
+              Email
+              <input id="email" name="email" type="email" placeholder="e.g., pooriaalijani@gmail.com" autocomplete="email" />
+              <span class="hint">Must contain “@” and a domain.</span>
+            </label>
+
+            <label class="label">
+              Amount (CAD)
+              <input id="amount" name="amount" type="number" placeholder="e.g., 100" inputmode="decimal" />
+              <span class="hint">Must be a positive number.</span>
+            </label>
+
+            <div class="actions">
+              <button id="submitBtn" type="button" class="btn primary">Validate & Generate JSON</button>
+              <button id="resetBtn" type="button" class="btn">Reset</button>
+            </div>
+
+            <div id="status" class="status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Generated JSON</h3>
+          <p class="muted small">Clean output that could be sent to a backend or stored as configuration.</p>
+
+          <pre class="codebox"><code id="jsonOutput">{}</code></pre>
+
+          <div class="divider"></div>
+
+          <h4 class="small-title">Example Config Snippet (properties)</h4>
+          <pre class="codebox small"><code># partner.rules.properties
+enableOffers=true
+currency=CAD
+minAmount=1
+maxAmount=10000
+</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>Email:</strong> <a href="mailto:pooriaalijani@gmail.com">pooriaalijani@gmail.com</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/pooriaaj" target="_blank" rel="noreferrer">github.com/pooriaaj</a></p>
+        <p class="muted small">Montreal, QC • Open to hybrid / onsite</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: shared layout -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Pooria Alijani</span>
+      <span class="muted">Built for a Web Integrator application</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Case Study — Integration & QA Workflow</title>
+  <meta name="description" content="Case study: how I approach web integration + QA validation + documentation." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Pooria Alijani</a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="case-study.html" class="active">Case Study</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1 class="page-title">Case Study: Partner Integration QA Workflow</h1>
+      <p class="subtitle">
+        A practical example of validating UI integration, data rules, and release readiness in a partner-driven environment.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Scenario</h2>
+      <div class="card">
+        <p>
+          During a partner integration, the goal is to ship a UI that matches brand rules and behavior, while ensuring configuration
+          and backend-facing data remain correct. I focus on three pillars:
+        </p>
+        <ul class="bullets">
+          <li><strong>UI Accuracy:</strong> layout, copy, imagery rules, links, and visibility states</li>
+          <li><strong>Data/Config Integrity:</strong> SQL validation, JSON/XML checks, configuration correctness</li>
+          <li><strong>Documentation:</strong> test coverage, defect reproduction steps, and release notes</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>My approach</h2>
+
+      <div class="grid-2">
+        <article class="card">
+          <h3>1) Requirements → Checklist</h3>
+          <ul class="bullets">
+            <li>Confirm partner rules (branding, email templates, UI constraints)</li>
+            <li>Define acceptance criteria (what is in / out)</li>
+            <li>Build a short test checklist for each flow</li>
+          </ul>
+          <p class="muted small">Deliverable: checklist + test plan notes aligned with stakeholders.</p>
+        </article>
+
+        <article class="card">
+          <h3>2) Validate UI + Cross-browser</h3>
+          <ul class="bullets">
+            <li>Check visibility, link behavior, UI consistency</li>
+            <li>Validate key states (empty, error, success)</li>
+            <li>Verify responsiveness across common breakpoints</li>
+          </ul>
+          <p class="muted small">Deliverable: screenshots + defect tickets with clear reproduction.</p>
+        </article>
+
+        <article class="card">
+          <h3>3) Validate rules with SQL</h3>
+          <ul class="bullets">
+            <li>Spot-check configuration values and rule constraints</li>
+            <li>Use SQL for profiling and investigation</li>
+            <li>Confirm expected results after fixes</li>
+          </ul>
+          <p class="muted small">Deliverable: queries + validation notes (kept internal).</p>
+        </article>
+
+        <article class="card">
+          <h3>4) Track, retest, and release</h3>
+          <ul class="bullets">
+            <li>Log defects clearly (expected vs actual, environment)</li>
+            <li>Retest fixes + quick regression in connected areas</li>
+            <li>Summarize release readiness and risks</li>
+          </ul>
+          <p class="muted small">Deliverable: QA summary for technical & non-technical audiences.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Sample “good ticket” format (Jira-style)</h2>
+      <div class="card">
+        <pre class="codebox"><code>Title: Offer form accepts negative amount (should block)
+
+Environment:
+- Browser: Chrome
+- OS: Windows
+- Build: partner-integration-rc2
+
+Steps to reproduce:
+1) Open Offer form
+2) Enter Amount: -10
+3) Click "Validate"
+
+Expected:
+- Error message shown
+- Submission blocked
+- No JSON generated
+
+Actual:
+- Form passes validation and generates JSON
+
+Notes:
+- Validation should enforce amount > 0
+- Align with minAmount config</code></pre>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:pooriaalijani@gmail.com">pooriaalijani@gmail.com</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/pooriaaj" target="_blank" rel="noreferrer">github.com/pooriaaj</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Pooria Alijani</span>
+      <span class="muted">Case Study</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
