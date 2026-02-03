@@ -1,8 +1,6 @@
-// ---- Footer year ----
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// ---- Demo validation helpers ----
 const nameRegex = /^[A-Za-z\s]+$/;
 
 const submitBtn = document.getElementById("submitBtn");
@@ -18,7 +16,7 @@ function submitForm() {
   if (!validation.ok) {
     showStatus(validation.message, false);
     setJsonOutput({});
-    return; // stops this function immediately (does NOT stop the whole program)
+    return;
   }
 
   showStatus("Valid ✅ JSON generated below.", true);

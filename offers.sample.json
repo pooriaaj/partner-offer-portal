@@ -1,0 +1,7 @@
+{
+  "offers": [
+    { "partner_code": "AIRNOVA", "name": "Test User", "email": "test@a.com", "amount": 60 },
+    { "partner_code": "AIRNOVA", "name": "Bad Amount", "email": "test@a.com", "amount": 5 },
+    { "partner_code": "RAILJET", "name": "Disabled Partner", "email": "test@a.com", "amount": 50 }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "partners": [
+    { "code": "AIRNOVA", "currency": "CAD", "min_amount": 50, "max_amount": 500, "enable_offers": true },
+    { "code": "CRUISEWAVE", "currency": "CAD", "min_amount": 100, "max_amount": 300, "enable_offers": true },
+    { "code": "RAILJET", "currency": "CAD", "min_amount": 10, "max_amount": 200, "enable_offers": false }
+  ]
+}
