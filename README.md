@@ -35,43 +35,6 @@ It demonstrates how partner offers are:
 
 ## Project Structure
 
-# Partner Offer Portal  
-### Integration & QA Demo
-
-## Overview
-This project simulates a **real-world partner offer integration flow**, focusing on **rule-based validation, data consistency, QA findings, and regression testing**.
-
-It demonstrates how partner offers are:
-- validated against configuration rules  
-- checked for data consistency  
-- logged with structured QA findings  
-- regression-tested after rule or config changes  
-
-> ⚠️ This is **not a UI product**.  
-> It is a **technical Integration + QA exercise** designed to mirror production workflows.
-
----
-
-## What This Project Demonstrates
-- SQL-based rule validation  
-- Configuration-driven behavior (JSON / properties)  
-- Structured QA documentation  
-- Regression testing workflows  
-- Clean Git practices  
-
----
-
-## Core Concepts Demonstrated
-- Partner-specific business rules (min/max amount, enable/disable)
-- Offer status validation (`validated` vs `rejected`)
-- QA findings logging for rejected offers
-- Regression testing after rule/config changes
-- Clear documentation for stakeholders and developers
-
----
-
-## Project Structure
-
 partner-offer-portal/
 │
 ├── index.html # Demo UI (static)
